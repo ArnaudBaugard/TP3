@@ -1,0 +1,320 @@
+body {
+	background-color : #1E1912;
+	/*background-color : #15110C ;*/
+	padding : 0;
+	margin : 0;
+	color : white;
+}
+
+* {
+	font-family : "Trebuchet MS", Helvetica, Arial, sans-serif ;
+	font-size : 14px ;
+}
+
+h1 {
+	text-transform : uppercase ;
+	font-size : 24px;
+	font-weight : bold ;
+	margin-bottom : 20px;
+	text-decoration : underline;
+}
+
+h2 {
+	text-transform : uppercase ;
+	font-size : 20px ;
+	font-weight : bold ;
+	text-decoration : underline;
+}
+
+p {
+	font-size : 14px ;
+	line-height : 22px ;
+}
+
+li {
+	list-style-position : inside ;
+	list-style-type : none ;
+}
+
+span {
+	color : white;
+}
+
+
+#header {
+	background-color : #1E1912 ;
+	width : 100%;
+	display : inline-block;	
+}
+
+#league{
+	width : 50%;
+}
+#logo {
+	background-color : #1E1912 ;
+	display : inline-block;
+	width : 50%%;
+}
+
+#phone {
+	display : none;
+}
+
+#imgmenu {
+	display : none;
+}
+
+#menu {
+	display : inline-block;
+	width : 50%;
+	text-align : right;
+	vertical-align : top;
+}
+
+#header a {
+	font-size : 12px;
+	text-decoration : none ;
+	color : white;
+	font-weight : bold ;
+	height : 50%;
+}
+
+#header a::before {
+	content : "|" ;
+	color : white;
+	padding-left : 10px;
+	padding-right : 10px;
+}
+
+#menu li{
+	list-style-position : inside ;
+	list-style-type : none ;
+	display : inline;
+	
+}
+
+#menu .formulaire {
+	display : inline;
+	margin-left : 10%;
+}
+
+
+#banniere img {
+	width : 100%;
+	border-top : 10px solid black ;	
+	border-bottom : 10px solid black;
+}
+
+
+
+
+
+#feature li {
+	display : inline-block;
+	vertical-align : top;
+	height : 100%;
+	width : 25% ;
+
+}
+
+#feature li a {
+	height : 15%;
+	color : white;
+	font-weight : bold;
+
+}
+
+#feature li a span {
+	padding : 10px ;
+	margin-top : 10px ;
+	margin-bottom : 10px ;
+	margin-right : 10px ; 
+	margin-left : -10px ;
+	box-shadow : none ;
+	text-align : center ;
+	background-color : #ff9900 ;
+}
+
+#map{
+	text-align : center;
+	display : inline-block;
+	width : 50%;
+}
+
+iframe {
+	width : 75%;
+	padding-left : 5%;
+}
+
+#formu {
+	display : inline-block;
+	width : 45%;
+	text-align : center;
+	border-left : 5px solid black;
+	vertical-align : top;
+	padding-top : 5%;
+}
+
+input, textarea, select {
+	 margin-top : 10px;
+	 border:1px solid #F5C5C5;
+	 border-radius:5px;
+	 box-shadow:1px 1px 2px #C0C0C0 inset;
+ }
+
+form {
+	width : 100%;
+	display : inline-block;
+}
+
+#nom, #prenom, #ville, #date{
+	width : 35%;
+	box-shadow:2px 2px 2px #D83F3D;
+}
+
+#mail, #fichier {
+	width : 75%;
+	box-shadow:2px 2px 2px #D83F3D;
+}
+
+#ok {
+	 padding:3px;
+	 border:1px solid #F5C5C5;
+	 border-radius:5px;
+	 box-shadow:2px 2px 2px #D83F3D;
+	
+}
+
+#ok:hover {
+	background-color : #ff9900 ;
+}
+
+form div label {
+	margin-left : 5px;
+}
+
+footer {
+	padding-top : 10px;
+	width : 100%;
+	height : 50px;
+	box-sizing : border-box;
+	background-color : #ff9900;
+	border-top : 3px solid black;
+	position : absolute;
+	display : flex;
+	justify-content : right;
+}
+
+footer span {
+	font-size : 32px;
+	font-weight : bold;
+	text-decoration : underline;
+}
+
+
+
+/*************************************/
+/* MEDIA QUERIES MOBILE */
+/*************************************/
+@media(-webkit-min-device-pixel-ratio:2 ){
+} 
+
+@media only screen 											
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+#menu{
+	display: none;
+}
+
+#league{
+	width: 50%;
+	margin-left : 5%;
+	
+}
+
+#phone {
+	display : block;
+	width : 18%;
+	position : absolute;
+	top : 0; 
+	right : 0;
+}
+
+#imgmenu {
+	display : inline-block;
+	width : 20%;
+}
+
+#feature ul li{ 
+	display: block;
+	width: 100%;
+}
+#feature strong{ 
+	font-size: 3vw;
+}
+
+#feature img {
+	margin-left : 20%;
+}
+
+#map{
+	width: 100%;
+ }
+#map iframe{
+	margin-left: 2.5rem;
+	margin-bottom: 0rem;
+}
+
+#formu{
+    width: 100%;
+    padding-right: 0%;
+    height: 50%;
+ }
+#formu input{
+    width: 90%;
+ }
+#message{ 
+    width: 88%;
+ }
+
+}
+
+/*********************************************************************/
+/************************ MEDIA QUERIES TABLETTE *********************/
+/*********************************************************************/
+
+@media only screen and (min-device-width : 650px) and (max-device-width : 1024px){
+
+#header {
+	width : 100%;
+}
+
+#header img{
+    width: 30%;
+    margin-left: 40%;
+}
+#header div{
+    margin-top: 1rem;
+}
+#header input {
+ margin-top: 0.9rem;
+ margin-right: -30rem;
+}
+
+#phone {
+	display : none;
+}
+
+#feature ul li{
+    width: 49%;
+}
+
+#formu input{
+    width: 90%;
+ }
+ #message{ 
+    width: 88%;
+ }
+
+}
